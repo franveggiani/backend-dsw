@@ -29,6 +29,7 @@ public class Pedido implements Serializable {
     private List<DetallePedido> detallePedidos = new ArrayList();
 
     @OneToOne(cascade = CascadeType.REMOVE, orphanRemoval = true, fetch = FetchType.EAGER)
+    @JoinColumn(nullable = true)
     private Factura factura;
 
     public void addDetallePedido(DetallePedido detallePedido){
