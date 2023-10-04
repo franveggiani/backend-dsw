@@ -11,7 +11,6 @@ import java.util.Optional;
 
 public abstract class BaseServiceImpl<E extends BaseEntity, ID extends Serializable> implements BaseService<E, ID>{
 
-    @Autowired
     protected BaseRepository<E, ID> baseRepository;
 
     @Transactional

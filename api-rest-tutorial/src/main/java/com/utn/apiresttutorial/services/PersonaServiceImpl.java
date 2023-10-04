@@ -9,7 +9,6 @@ import java.util.List;
 
 @Service
 public class PersonaServiceImpl extends BaseServiceImpl<Persona, Long> implements PersonaService {
-
     @Autowired
     private PersonaRepository personaRepository;
 

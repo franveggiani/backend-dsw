@@ -21,8 +21,6 @@ repositories {
 	mavenCentral()
 }
 
-
-
 dependencies {
 
 	// https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui
@@ -41,4 +39,10 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+jar {
+	manifest {
+		attributes 'ApiRestTutorialApplication': 'com.utn.apiresttutorial.ApiRestTutorialApplication'
+	}
 }
