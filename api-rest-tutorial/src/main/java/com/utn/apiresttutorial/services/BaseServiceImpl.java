@@ -3,8 +3,6 @@ package com.utn.apiresttutorial.services;
 import com.utn.apiresttutorial.entities.BaseEntity;
 import com.utn.apiresttutorial.repositories.BaseRepository;
 import jakarta.transaction.Transactional;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.io.Serializable;
 import java.util.List;
