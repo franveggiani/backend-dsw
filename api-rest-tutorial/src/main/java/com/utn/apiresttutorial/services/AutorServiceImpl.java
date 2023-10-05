@@ -11,7 +11,10 @@ import java.util.List;
 @Service
 public class AutorServiceImpl extends BaseServiceImpl<Autor, Long> implements AutorService{
 
-    @Autowired
     private AutorRepository autorRepository;
 
+    public AutorServiceImpl(BaseRepository<Autor, Long> baseRepository, AutorRepository autorRepository) {
+        super(baseRepository);
+        this.autorRepository = autorRepository;
+    }
 }
