@@ -20,7 +20,7 @@ public class Domicilio extends BaseEntity{
     @Column
     private int numero;
 
-    @ManyToOne(optional = false)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "fk_localidad")
     private Localidad localidad;
 }
